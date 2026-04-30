@@ -1,0 +1,85 @@
+{
+  "panel":[
+    {
+    "id": "api",
+      "button": {
+        "label": "تنظیمات API"
+      },
+      "container" : {
+        "inputs": [
+          {
+            "id": "auth_key",
+            "type": "text",
+            "label": "کلید API"
+          },
+          {
+            "id": "sms_service",
+            "type": "select",
+            "label": "انتخاب سرویس دهنده",
+            "options": [
+              {"value": "sms_ir","label": "SMS.IR"},
+              {"value": "sms_ir2","label": "SMS.IR2"},
+              {"value": "sms_ir3","label": "SMS.IR3"}
+            ]
+          }
+        ]
+      }
+  },
+  {
+    "id" : "woocommerce",
+    "button": {
+      "label": "تنظیمات woocommerce"
+    },
+    "container": {
+      "inputs":[
+        {
+          "id": "active_woocommerce",
+          "type": "checkbox",
+          "label": "فعال سازی برای ووکامرس"
+        },
+        {
+          "id": "in_woocommerce_my_account",
+          "type": "checkbox",
+          "label": "در صفحه حساب کاربری ووکامرس"
+        },
+        {
+          "id": "in_woocommerce_checkout",
+          "type": "checkbox",
+          "label": "در صفحه تسویه حساب"
+        },
+        {
+          "id": "replace_all_woocommerce_myAccount",
+          "type": "checkbox",
+          "label": "جایگزین دکمه حساب کاربری من"
+        }
+
+      ]
+    }
+  },
+  {
+    "id" : "view_module",
+    "button": {
+      "label": "استایل نمایش"
+    },
+    "container": {
+      "inputs": [
+        {
+          "id": "popup_style",
+          "type": "radio",
+          "label": "استایل نمایش فرم ورودی",
+          "labels": [
+            {"value": "simple" , "label": "نمایش ساده"},
+            {"value": "modern" , "label": "مدرن"},
+            {"value": "new_page" , "label": "صفحه جدید"}
+          ],
+          "preview": [
+            {"condition": "simple" , "value": "this is the simple test"},
+            {"condition": "modern" , "value": "this is the simple test"},
+            {"condition": "new_page" , "value": "this is the simple test"}
+          ]
+        }
+      ]
+    }
+  }],
+  "collection": ["auth_key" ,"sms_service" ,"active_woocommerce" ,"in_woocommerce_my_account" ,"in_woocommerce_checkout" ,"replace_all_woocommerce_myAccount" ,"popup_style"]
+}

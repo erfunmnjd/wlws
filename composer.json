@@ -1,0 +1,15 @@
+{
+    "name": "erfun/wlws",
+    "description": "wobika login with sms",
+    "autoload": {
+        "psr-4": {
+            "Erfun\\Wlws\\": "includes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "erfunmnjd",
+            "email": "erfun.mnjd@gmail.com"
+        }
+    ]
+}
