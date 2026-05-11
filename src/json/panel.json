@@ -13,6 +13,20 @@
             "label": "کلید API"
           },
           {
+            "id": "pass_lenght",
+            "type": "select",
+            "label": "طول کد otp",
+            "options": [
+              {"value": "4","label": "4 عدد"},
+              {"value": "5","label": "5 عدد"},
+              {"value": "6","label": "6 عدد"},
+              {"value": "7","label": "7 عدد"},
+              {"value": "8","label": "8 عدد"},
+              {"value": "9","label": "9 عدد"},
+              {"value": "10","label": "10 عدد"}
+            ]
+          },
+          {
             "id": "sms_service",
             "type": "select",
             "label": "انتخاب سرویس دهنده",

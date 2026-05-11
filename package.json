@@ -1,16 +1,26 @@
 {
-  "name": "wlws",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "My webpack project",
+  "name": "webpack-project",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tw": "npx @tailwindcss/cli -i ./src/css/tailwind.css -o ./src/css/wlws_main_panel.css --watch"
+    "build": "webpack --mode=production --config-node-env=production",
+    "build:dev": "webpack --mode=development",
+    "watch": "webpack --watch",
+    "twS": " npx @tailwindcss/cli -i ./src/css/minimal-tw.css -o ./src/css/wlws_signup_standalone.css --watch"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "devDependencies": {
+    "alpinejs": "^3.15.11",
+    "jquery": "^4.0.0",
+    "prettier": "^3.8.3",
+    "prettier-plugin-tailwindcss": "^0.8.0",
+    "webpack": "^5.106.2",
+    "webpack-cli": "^7.0.2"
+  },
   "dependencies": {
+    "@alpinejs/mask": "^3.15.11",
     "@tailwindcss/cli": "^4.2.4",
+    "browser-sync-webpack-plugin": "^2.4.0",
+    "flowbite": "^4.0.1",
     "tailwindcss": "^4.2.4"
   }
 }
