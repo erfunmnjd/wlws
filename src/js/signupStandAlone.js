@@ -1,16 +1,11 @@
 import Alpine from "alpinejs";
 import { mask } from "@alpinejs/mask";
 import { showNotification } from "./components/alert";
-import "../css/minimal-tw.css";
+import "../css/signup-stanalone-style.css";
 import "flowbite";
+import "./components/mainContainer.js";
 window.Alpine = Alpine;
 Alpine.plugin(mask);
-document.addEventListener("DOMContentLoaded", () => {
-  const notifContainer = document.createElement("div");
-  notifContainer.id = "wlws_main_container";
-  notifContainer.classList = "absolute top-0 w-full";
-  document.body.prepend(notifContainer);
-});
 document.addEventListener("alpine:init", () => {
   Alpine.data("wlws_send_otp", () => ({
     wlws: window.wlws,

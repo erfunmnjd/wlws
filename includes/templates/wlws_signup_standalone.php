@@ -13,12 +13,12 @@ class wlws_signup_standalone
 
     function wlws_signup_standalone_shortcode(): string
     {
-        wp_enqueue_script('wlws_signup_standalone', wlws_plugin_url . 'src/js/output/signupStandAlone.bundle.js', [], '1.0', ['strategy' => 'defer']);
-        wp_localize_script("wlws_signup_standalone", 'wlws', [
+        wp_enqueue_script('wlws_signup_with_button', wlws_plugin_url . 'src/js/output/signupWithButton.bundle.js', [], '1.0', ['strategy' => 'defer']);
+        wp_localize_script("wlws_signup_with_button", 'wlws', [
             'plugin_url' => wlws_plugin_url,
             'ajax_url' => admin_url('admin-ajax.php'),
             'prefix' => (new wlws_setting_manager)->prefix,
-            'nonce' => wp_create_nonce('wlws_signup_standalone'),
+            'nonce' => wp_create_nonce('wlws_signup'),
             'otp_lenght' => get_option((new wlws_setting_manager)->prefix . "pass_lenght", 4)
         ]);
 
@@ -51,7 +51,6 @@ class wlws_signup_standalone
                             autocomplete="one-time-code"
                             x-bind:disabled="loading" 
                             inputmode="numeric"
-                            maxlength="6"
                             pattern="\d{6}" 
                             x-mask:dynamic="otpCodeLenght"
                             class="peer appearance-none border-none text-white placeholder:text-white"

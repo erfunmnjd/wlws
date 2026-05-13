@@ -1,0 +1,28 @@
+@import "tailwindcss/utilities.css" source(none) important;
+@import "tailwindcss/theme.css" source(none) important;
+@import "flowbite/src/themes/default" important;
+@plugin "flowbite/plugin";
+@source "../../includes/templates/wlws_compilation_with_button.php";
+@source "../../node_modules/flowbite";
+@source "../js/output/signupWithButton.bundle.js";
+
+.peer:focus + .peer‑focus:text-lg {
+  font-size: 1.125rem; /* Tailwind `text-lg` → 18 px */
+}
+.peer:focus + .peer‑focus:bottom-7 {
+  bottom: 1.75rem; /* Tailwind `bottom-7` → 28 px from the bottom of the relative parent */
+}
+
+/* -------------------------------------------------------------------------
+   When the peer’s placeholder is shown (i.e. input empty)
+   ------------------------------------------------------------------------*/
+.peer:placeholder‑shown + .peer‑placeholder‑shown:text-sm {
+  font-size: 0.875rem; /* Tailwind `text-sm` → 14 px */
+}
+.peer:placeholder‑shown + .peer‑placeholder‑shown:bottom-2 {
+  bottom: 0.5rem; /* Tailwind `bottom-2` → 8 px from the bottom of the relative parent */
+}
+
+/* -------------------------------------------------------------------------
+   Common label styles (you can keep your original Tailwind classes)
+   ------------------------------------------------------------------------*/

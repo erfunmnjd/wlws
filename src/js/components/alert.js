@@ -6,7 +6,7 @@ import { Dismiss } from "flowbite";
  */
 export function showNotification(message, type = "info") {
   const wlwsNotificationContainer = document.getElementById(
-    "wlws_main_container",
+    "wlws_main_container_notification",
   );
 
   if (!wlwsNotificationContainer) {

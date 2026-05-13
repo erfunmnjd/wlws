@@ -4,5 +4,4 @@
 @plugin "flowbite/plugin";
 @source "../../includes/templates/";
 @source "../../node_modules/flowbite";
-@source "../js/components/alert.js";
-
+@source "../js/components";

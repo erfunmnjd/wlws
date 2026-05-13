@@ -1,11 +1,11 @@
 {
-  "panel":[
+  "panel": [
     {
-    "id": "api",
+      "id": "api",
       "button": {
         "label": "تنظیمات API"
       },
-      "container" : {
+      "container": {
         "inputs": [
           {
             "id": "auth_key",
@@ -17,13 +17,13 @@
             "type": "select",
             "label": "طول کد otp",
             "options": [
-              {"value": "4","label": "4 عدد"},
-              {"value": "5","label": "5 عدد"},
-              {"value": "6","label": "6 عدد"},
-              {"value": "7","label": "7 عدد"},
-              {"value": "8","label": "8 عدد"},
-              {"value": "9","label": "9 عدد"},
-              {"value": "10","label": "10 عدد"}
+              { "value": "4", "label": "4 عدد" },
+              { "value": "5", "label": "5 عدد" },
+              { "value": "6", "label": "6 عدد" },
+              { "value": "7", "label": "7 عدد" },
+              { "value": "8", "label": "8 عدد" },
+              { "value": "9", "label": "9 عدد" },
+              { "value": "10", "label": "10 عدد" }
             ]
           },
           {
@@ -31,69 +31,90 @@
             "type": "select",
             "label": "انتخاب سرویس دهنده",
             "options": [
-              {"value": "sms_ir","label": "SMS.IR"},
-              {"value": "sms_ir2","label": "SMS.IR2"},
-              {"value": "sms_ir3","label": "SMS.IR3"}
+              { "value": "sms_ir", "label": "SMS.IR" },
+              { "value": "sms_ir2", "label": "SMS.IR2" },
+              { "value": "sms_ir3", "label": "SMS.IR3" }
             ]
           }
         ]
       }
-  },
-  {
-    "id" : "woocommerce",
-    "button": {
-      "label": "تنظیمات woocommerce"
     },
-    "container": {
-      "inputs":[
-        {
-          "id": "active_woocommerce",
-          "type": "checkbox",
-          "label": "فعال سازی برای ووکامرس"
-        },
-        {
-          "id": "in_woocommerce_my_account",
-          "type": "checkbox",
-          "label": "در صفحه حساب کاربری ووکامرس"
-        },
-        {
-          "id": "in_woocommerce_checkout",
-          "type": "checkbox",
-          "label": "در صفحه تسویه حساب"
-        },
-        {
-          "id": "replace_all_woocommerce_myAccount",
-          "type": "checkbox",
-          "label": "جایگزین دکمه حساب کاربری من"
-        }
-
-      ]
-    }
-  },
-  {
-    "id" : "view_module",
-    "button": {
-      "label": "استایل نمایش"
+    {
+      "id": "woocommerce",
+      "button": {
+        "label": "تنظیمات woocommerce"
+      },
+      "container": {
+        "inputs": [
+          {
+            "id": "active_woocommerce",
+            "type": "checkbox",
+            "label": "فعال سازی برای ووکامرس"
+          },
+          {
+            "id": "in_woocommerce_my_account",
+            "type": "checkbox",
+            "label": "در صفحه حساب کاربری ووکامرس"
+          },
+          {
+            "id": "in_woocommerce_checkout",
+            "type": "checkbox",
+            "label": "در صفحه تسویه حساب"
+          },
+          {
+            "id": "replace_all_woocommerce_myAccount",
+            "type": "checkbox",
+            "label": "جایگزین دکمه حساب کاربری من"
+          }
+        ]
+      }
     },
-    "container": {
-      "inputs": [
-        {
-          "id": "popup_style",
-          "type": "radio",
-          "label": "استایل نمایش فرم ورودی",
-          "labels": [
-            {"value": "simple" , "label": "نمایش ساده"},
-            {"value": "modern" , "label": "مدرن"},
-            {"value": "new_page" , "label": "صفحه جدید"}
-          ],
-          "preview": [
-            {"condition": "simple" , "value": "this is the simple test"},
-            {"condition": "modern" , "value": "this is the simple test"},
-            {"condition": "new_page" , "value": "this is the simple test"}
-          ]
-        }
-      ]
+    {
+      "id": "view_module",
+      "button": {
+        "label": "استایل نمایشی"
+      },
+      "container": {
+        "inputs": [
+          {
+            "id": "popup_style",
+            "type": "radio",
+            "label": "فرم ها",
+            "labels": [
+              { "value": "simple", "label": "نمایش ساده" },
+              { "value": "modern", "label": "مدرن" },
+              { "value": "new_page", "label": "صفحه جدید" }
+            ],
+            "preview": [
+              { "condition": "simple", "value": "this is the simple test" },
+              { "condition": "modern", "value": "this is the simple test" },
+              { "condition": "new_page", "value": "this is the simple test" }
+            ]
+          },
+          {
+            "id": "button_style",
+            "type": "radio",
+            "label": "دکمه ها",
+            "labels": [
+              { "value": "icon", "label": "آیکن" },
+              { "value": "text", "label": "متن" }
+            ],
+            "preview": [
+              { "condition": "icon", "value": "this is the simple test" },
+              { "condition": "text", "value": "this is the simple test" }
+            ]
+          }
+        ]
+      }
     }
-  }],
-  "collection": ["auth_key" ,"sms_service" ,"active_woocommerce" ,"in_woocommerce_my_account" ,"in_woocommerce_checkout" ,"replace_all_woocommerce_myAccount" ,"popup_style"]
+  ],
+  "collection": [
+    "auth_key",
+    "sms_service",
+    "active_woocommerce",
+    "in_woocommerce_my_account",
+    "in_woocommerce_checkout",
+    "replace_all_woocommerce_myAccount",
+    "popup_style"
+  ]
 }

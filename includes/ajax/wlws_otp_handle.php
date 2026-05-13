@@ -24,7 +24,7 @@ class wlws_otp_handle
             $phone_number = $_POST['phone_number'];
 
             //verify NONCE
-            if (wp_verify_nonce($nonce, "wlws_signup_standalone")) {
+            if (wp_verify_nonce($nonce, "wlws_signup")) {
 
                 // check phone number 
                 if ($phone_number == 'null') {
@@ -49,7 +49,7 @@ class wlws_otp_handle
             $code = $_POST['code'];
 
             //verify NONCE
-            if (wp_verify_nonce($nonce, "wlws_signup_standalone")) {
+            if (wp_verify_nonce($nonce, "wlws_signup")) {
 
                 // check phone number 
                 if ($phone_number == 'null' && $code == 'null') {

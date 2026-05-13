@@ -8,13 +8,14 @@ const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 const config = {
   entry: {
     signupStandAlone: "./src/js/signupStandAlone.js",
+    signupWithButton: "./src/js/signupWithButton.js",
   },
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "src/js/output"),
   },
   resolve: {
-    extensions: [".js", ".json", "php"],
+    extensions: [".js", ".json", ".php", ".css"],
   },
   plugins: [
     new webpack.ProvidePlugin({
